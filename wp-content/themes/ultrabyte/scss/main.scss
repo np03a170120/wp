@@ -1,0 +1,23 @@
+/* 
+Author: Ultrabyte
+Version: 0.0.1
+*/
+/* Base- style, variables, mixins, etc */
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_base.scss';
+/* layout- footer, header, nav etc */
+@import 'layouts/_header.scss';
+@import 'layouts/_nav.scss';
+@import 'layouts/_banner.scss';
+@import 'layouts/_services.scss';
+@import 'layouts/_projects.scss';
+@import 'layouts/_testimonial.scss';
+@import 'layouts/_contact.scss';
+@import 'layouts/_footer.scss';
+/* modules- */
+@import 'modules/_blocks.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_sections.scss';
+@import 'modules/_typography.scss';
+@import 'modules/_animation.scss';

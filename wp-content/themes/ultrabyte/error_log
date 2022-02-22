@@ -1,0 +1,4 @@
+[30-Sep-2021 15:50:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/ultrabyteit/public_html/wp-content/themes/ultrabyte/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/ultrabyteit/public_html/wp-content/themes/ultrabyte/index.php on line 2

@@ -1,0 +1,199 @@
+.nav-menu-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px 0;
+  z-index: 10;
+}
+
+.nav-logo {
+  position: absolute;
+  left: 0;
+}
+
+.nav-menu-list {
+  margin-right: 20px;
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+
+    a {
+      display: inline-block;
+      text-shadow: 0px 0px 1px rgba(243, 243, 243, 0.7);
+      font-size: 15px;
+      font-weight: 800;
+      color: #363F54;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 10px 15px;
+    }
+  }
+}
+
+.nav-sticky-btn {
+  #hamburger-menu {
+    display: block;
+    position: fixed;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    background: $primary-color;
+    top: 7px;
+    line-height: 50px;
+    text-align: center;
+    color: #000;
+    @include border-radius(50%);
+    box-shadow: 0px 5px 15px 1px rgba(42, 27, 77, 0.5);
+    cursor: pointer;
+    border: 0;
+    z-index: 1100;
+  }
+}
+
+.hamburger-menu-button-open {
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -12px;
+}
+
+.hamburger-menu-button-open,
+.hamburger-menu-button-open::before,
+.hamburger-menu-button-open::after {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 4px;
+  @include transition(all, 0.3s, ease-in-out);
+}
+
+.hamburger-menu-button-open::before,
+.hamburger-menu-button-open::after {
+  left: 0;
+  content: "";
+}
+
+.hamburger-menu-button-open::before {
+  top: 6px;
+}
+
+.hamburger-menu-button-open::after {
+  bottom: 6px;
+}
+
+.hamburger-menu-button-close {
+  background: transparent;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.hamburger-menu-button-close::before {
+  -webkit-transform: translateY(-6px) rotate(45deg);
+  transform: translateY(-6px) rotate(45deg);
+}
+
+.hamburger-menu-button-close::after {
+  -webkit-transform: translateY(6px) rotate(-45deg);
+  transform: translateY(6px) rotate(-45deg);
+}
+
+.ham-menu .menu-ham-menu {
+  display: none;
+  -webkit-transform: translateY(-110%);
+  transform: translateY(-110%);
+  background: #4d4d4d;
+  @include transition(all, 0.5s, ease-in-out);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+
+.ham-menu.on .menu-ham-menu {
+  @include translate-X(0);
+  display: table;
+}
+
+.ham-menu-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  ul {
+    li {
+      margin-bottom: 15px;
+      -webkit-animation-name: slideInUpSmall;
+      animation-name: slideInUpSmall;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      -moz-animation-fill-mode: both;
+      animation-fill-mode: both;
+      backface-visibility: hidden;
+
+      &:nth-child(1) {
+        -webkit-animation-delay: .1s;
+        -moz-animation-delay: .1s;
+        -o-animation-delay: .1s;
+        animation-delay: .1s;
+      }
+      &:nth-child(2) {
+        -webkit-animation-delay: .2s;
+        -moz-animation-delay: .2s;
+        -o-animation-delay: .2s;
+        animation-delay: .2s;
+      }
+      &:nth-child(3) {
+        -webkit-animation-delay: .3s;
+        -moz-animation-delay: .3s;
+        -o-animation-delay: .3s;
+        animation-delay: .3s;
+      }
+      &:nth-child(4) {
+        -webkit-animation-delay: .4s;
+        -moz-animation-delay: .4s;
+        -o-animation-delay: .4s;
+        animation-delay: .4s;
+      }
+      &:nth-child(5) {
+        -webkit-animation-delay: .5s;
+        -moz-animation-delay: .5s;
+        -o-animation-delay: .5s;
+        animation-delay: .5s;
+      }
+      &:nth-child(6) {
+        -webkit-animation-delay: .6s;
+        -moz-animation-delay: .6s;
+        -o-animation-delay: .6s;
+        animation-delay: .6s;
+      }
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.inner-nav {
+  .nav-menu-wrapper {
+    position: relative;
+    box-shadow: 1px -2px 10px #332c2c;
+    @include box-shadow(1px, -2px, 11px, rgba(0, 0, 0, .6));
+  }
+}

@@ -1,0 +1,166 @@
+.slide-box {
+  height: 100vh;
+  margin-bottom: -10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 1;
+  z-index: 20;
+
+}
+
+.first-slide-box {
+  background-image: url(../images/banner/4.jpg);
+}
+
+.second-slide-box {
+  background-image: url(../images/banner/1.jpg);
+}
+.third-slide-box {
+  background-image: url(../images/banner/3.jpg);
+}
+.slider-container {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+
+.banner-caption-box {
+  margin-top: 60px;
+  color: #ffffff;
+
+  h4 {
+    opacity: 0.5;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 30px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: #fff;
+      left: 0;
+      width: 20px;
+      height: 2px;
+      top: 8px;
+    }
+  }
+
+  h3 {
+    opacity: 0.6;
+  }
+}
+
+.text-bold {
+  font-size: 54px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.scroll-frame {
+  -webkit-box-shadow: 0 15px 28px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 28px 0 rgba(0, 0, 0, 0.3);
+  padding-top: 21px;
+  position: relative;
+
+  img {
+    width: 100%;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-name: scrollCoverBrowser;
+    animation-name: scrollCoverBrowser;
+    -webkit-animation-timing-function: cubic-bezier(1.000, 0.005, 0.305, 1.000);
+    animation-timing-function: cubic-bezier(1.000, 0.005, 0.305, 1.000);
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+  }
+}
+
+.scroll-frame-desktop {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.scroll-frame-desktop-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  right: 0;
+  height: 21px;
+  z-index: 10;
+}
+
+.ptn {
+  position: absolute;
+  left: 20px;
+  background: #ccc;
+  @include border-radius(50%);
+  height: 5px;
+  width: 5px;
+  top: 40%;
+}
+
+.ptn-sec {
+  left: 30px;
+}
+
+.ptn-thr {
+  left: 40px;
+}
+
+.scroll-frame-phone {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 15px 28px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 28px 0 rgba(0, 0, 0, 0.3);
+  margin: 0 30px;
+}
+
+.phone-case {
+  width: 190px;
+  margin-top: -5px;
+  margin-bottom: -3px;
+}
+
+.scroll-frame-abs {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  top: 0;
+  @include border-radius(50px);
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+/* progress bar */
+.slider-progress {
+  width: 100%;
+  height: 10px;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  top: 73px;
+}
+
+.slider-progress .progress {
+  width: 0%;
+  height: 5px;
+  background: $primary-color;
+}
